@@ -10,6 +10,9 @@ var circularShape;
 var w;
 var songs;
 var trackNum;
+var rotation;
+var magnify;
+var magDir;
 
 function toggleSong() {
    if (song.isPlaying()){
@@ -64,6 +67,8 @@ function setup() {
   fft = new p5.FFT(0.78, 64);
   w = width / 64;
   song = songs[trackNum];
+  magDir = 1;
+  rotation = 0;
 }
 
 function draw() {
@@ -78,9 +83,10 @@ function draw() {
 }
 
 function drawFlat(spectrum){
+  var maxF = Math.max(spectrum);
   for (var i = 0; i < spectrum.length; i++) {
      var amp = spectrum[i];
-     var y = map(amp, 0, 256, height, 0);
+     var y = map(amp, 0, maxF, height, 0);
      fill(i,255,255);
      rect(i*w,y,w-2,height-y)
   }
@@ -88,11 +94,24 @@ function drawFlat(spectrum){
 
 function drawCircle(spectrum){
   noStroke();
+  var maxF = Math.max(spectrum);
   translate(width/2, height/2);
+
+  // Animation
+  rotate(rotation);
+  rotation += 1;
+  scale(magnify);
+  if (magnify > 5 || magnify < 0.4) {
+     magDir *= -1;
+  }
+  magnify += 0.2 * magDir;
+
+
+
   for (var i = 0; i < spectrum.length; i++) {
      var amp = spectrum[i];
      var x = i;
-     var y = map(amp, 0, 256, height, 0);
+     var y = map(amp, 0, maxF, height, 0);
      if (circularShape) {
         var angle = map(i, 0, spectrum.length, 0, 360);
         var r = map(amp, 0, 256, 20, 100);
