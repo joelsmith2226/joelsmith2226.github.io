@@ -2634,8 +2634,10 @@ input, select, textarea {
 
 		.image.main {
 			display: block;
-			margin: 4rem 0;
-			width: 100%;
+			margin: 0 2rem 2rem 0;
+			width: 50%;
+			align: left;
+			float: left;
 		}
 
 			.image.main:first-child {
@@ -2656,6 +2658,34 @@ input, select, textarea {
 				margin: 2rem 0;
 			}
 
+		}
+		.image.sidel {
+			display: block;
+			margin: 0 2rem 2rem 0;
+			width: 43%;
+			align: left;
+			float: left;
+		}
+		.image.sidel:first-child {
+			margin-top: 0;
+		}
+
+		.image.sidel img {
+			width: 100%;
+		}
+		.image.sider {
+			display: block;
+			margin: 0 2rem 2rem 0;
+			width: 43%;
+			align: right;
+			float: right;
+		}
+		.image.sider:first-child {
+			margin-top: 0;
+		}
+
+		.image.sider img {
+			width: 100%;
 		}
 
 	a.image {
@@ -2945,7 +2975,7 @@ input, select, textarea {
 		}
 
 		header.major {
-			margin: 0 0 4rem 0;
+			margin: -4rem 0 2rem 0;
 			text-align: center;
 		}
 
