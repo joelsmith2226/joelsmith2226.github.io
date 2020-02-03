@@ -4717,3 +4717,24 @@ input, select, textarea {
 		}
 
 	}
+
+/* USER DEFINED */
+
+.resume-box {
+	font-size:14px;
+	float:left;
+	display:flex;
+}
+
+.resume-box.title {
+	width:10%;
+	transform: rotate(-90deg);
+	font-weight: bold;
+	text-align:left;
+	margin:auto;
+	font-size:auto;
+}
+
+.resume-box.content {
+	width:90%;
+}
