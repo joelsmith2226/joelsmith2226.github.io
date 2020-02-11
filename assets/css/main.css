@@ -4726,23 +4726,43 @@ input, select, textarea {
 
 .resume-box {
 	font-size:14px;
-	width:100%;
+	width:105%;
 	/* float:left; */
-	display:flex;
+	display:table;
+	position: relative;
+	min-height: 150px;
 }
 
 .resume-box.title {
 	width:10%;
-	transform: rotate(-90deg);
 	font-weight: bold;
-	text-align:left;
-	margin:auto;
+	text-align:center;
 	font-size: relative;
+	/* border: 3pt solid rgba(0,0,0); */
+	display:table-cell;
+	position: absolute;
+	vertical-align: middle;
+}
+
+.resume-box.title.rotated-text {
+	transform: rotate(-90deg);
+	position: absolute;
+	bottom: -40px;
+	left:10px;
+	padding: 4rem 1rem 1rem 0rem;
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+
 }
 
 .resume-box.content {
-	/* width:90%; */
+	width:90%;
 	text-align: center;
+	position:relative;
+	display:table-cell;
+	vertical-align: middle;
+
 }
 
 #main {
@@ -4755,6 +4775,15 @@ input, select, textarea {
 	/* font-style: black; */
 }
 
-/* <div id="languages-img" style="width:30%; overflow:hidden;float:left;display: table-cell">
-	<a class="image" ><img src="images/code.jpg" alt="" style="max-width:100%"/></a>
-</div> */
+/*TODO*/
+.resume-img {
+	width:30%;
+	float:left;
+	overflow:hidden;
+	position:absolute;
+	vertical-align: middle;
+	top:0;
+	bottom:0;
+	text-align: center;
+	margin-left:-1rem;
+}
