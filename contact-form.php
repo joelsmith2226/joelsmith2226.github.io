@@ -11,6 +11,6 @@ if (isset($_POST['submit-mail'])) {
    $txt = "Portfolio inquiry from ".$name.".\n\n".$message;
 
    mail($mailTo, $subject, $txt, $headers);
-   header("Location: contaxtme.php?mailsend");
+   header("Location: contactme.php?mailsend");
 }
  ?>
