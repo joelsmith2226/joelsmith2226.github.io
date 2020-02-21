@@ -198,6 +198,33 @@
 
 						<!-- Footer -->
 							<footer id="footer">
+								<section>
+										<form method="post" action="https://formspree.io/mbjyjwoo" method="POST">
+											<div class="fields">
+												<div class="field">
+													<label for="name">Name <input type="text" name="name" /></label>
+
+												</div>
+												<div class="field">
+													<label for="email">Email <input type="email" name="_replyto"/></label>
+
+												</div>
+												<div class="field">
+													<label for="message">Message <textarea name="message" rows="3"></textarea></label>
+												</div>
+											</div>
+											<script language="JavaScript">
+												var frmvalidator  = new Validator("contactform");
+												frmvalidator.addValidation("name","req","Please provide your name");
+												frmvalidator.addValidation("email","req","Please provide your email");
+												frmvalidator.addValidation("email","email",
+												  "Please enter a valid email address");
+											</script>
+											<ul class="actions">
+												<li><button type="submit" value="Send" />Send</button></li>
+											</ul>
+										</form>
+									</section>
 								<section class="split contact">
 									<section class="alt">
 										<h3>Location</h3>
