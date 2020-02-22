@@ -2730,7 +2730,7 @@ input, select, textarea {
 		}
 
 	a.image {
-		overflow: hidden;
+		/* overflow: hidden; */
 	}
 
 		a.image img {
