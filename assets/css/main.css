@@ -4774,8 +4774,8 @@ input, select, textarea {
 
 .resume-box {
 	font-size:14px;
-	width:110%;
-	left: -1rem;
+	width:100%;
+	left: -0.1rem;
 	/* float:left; */
 	display:table;
 	position: relative;
@@ -4801,7 +4801,7 @@ input, select, textarea {
 	transform: rotate(-90deg);
 	position: absolute;
 	bottom: -40px;
-	left:10px;
+	left:7px;
 	padding: 2rem 1rem 1rem 0rem;
 	text-align: center;
 	vertical-align: middle;
