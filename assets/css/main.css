@@ -4774,11 +4774,16 @@ input, select, textarea {
 
 .resume-box {
 	font-size:14px;
-	width:105%;
+	width:110%;
+	left: -1rem;
 	/* float:left; */
 	display:table;
 	position: relative;
 	min-height: 150px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	text-align:center;
 }
 
 .resume-box.title {
@@ -4797,7 +4802,7 @@ input, select, textarea {
 	position: absolute;
 	bottom: -40px;
 	left:10px;
-	padding: 4rem 1rem 1rem 0rem;
+	padding: 2rem 1rem 1rem 0rem;
 	text-align: center;
 	vertical-align: middle;
 	display: table-cell;
@@ -4838,4 +4843,27 @@ input, select, textarea {
 
 .more {
 	display: none;
+}
+
+.resume-box-bg {
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	text-align:center;
+}
+
+#westpac{
+	background-image: url("../../images/westpac.jpg");
+}
+
+#QBE{
+	background-image: url("../../images/QBE_logo.png");
+}
+
+#coffeebetter{
+	background-image: url("../../images/coffeebetter.png");
+}
+
+#unsw{
+	background-image: url("../../images/unsw.png");
 }
