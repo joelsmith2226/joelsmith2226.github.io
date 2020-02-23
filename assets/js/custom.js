@@ -7,7 +7,7 @@ function readMore(id) {
 
   if (dots.style.display === "none") {
     dots.style.display = "inline";
-    btnArrow.innerHTML = "⮟";
+    btnArrow.innerHTML = '<i class="fa fa-angle-double-down"></i>';
     btn.style.top = "-2rem";
     btnText.innerHTML = "Read More";
     moreText.style.display = "none";
@@ -16,7 +16,7 @@ function readMore(id) {
     console.log(btnText.id, btnArrow.id);
     dots.style.display = "none";
     btnText.innerHTML = "Read Less";
-    btnArrow.innerHTML = "⮝";
+    btnArrow.innerHTML = '<i class="fa fa-angle-double-up"></i>';
 
     btn.style.top = "-1rem";
     console.log(btnText.id, btnArrow.id);
