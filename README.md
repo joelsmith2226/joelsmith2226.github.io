@@ -11,6 +11,7 @@ The **Resume** page is the homepage for the website that highlights my technical
 |<img src="https://github.com/joelsmith2226/joelsmith2226.github.io/blob/master/images/gifs/resume.gif" width="600" height="280" align="center">|
 
 <hr>
+
 ## Projects
 
 The **Projects** page is a dashboard for all the projects that have a current working finished product, projects in development and future project ideas I'd like to work on. It is a springboard to both the code and live versions of these projects.
@@ -20,6 +21,7 @@ The **Projects** page is a dashboard for all the projects that have a current wo
 |<img src="https://github.com/joelsmith2226/joelsmith2226.github.io/blob/master/images/gifs/project640.gif" width="600" height="280" align="center">|
 
 <hr>
+
 ## Contact
 
 The **Contact** page is a simple form that allows anyone to send an inquiry to the contact@joelsmithdev.com email address via the email api [formspree.io](formspree.io).
